@@ -2,17 +2,17 @@
 
 # Copyright (c) 2021-2026 community-scripts ORG
 # Author: MickLesk (CanbiZ)
-# License: MIT | https://github.com/noahbleau/ProxmoxVE-non-root/raw/root-check-bypass/LICENSE
+# License: MIT | https://github.com/noahbleau/ProxmoxVE-non-root/raw/main/LICENSE
 # Source: https://github.com/portainer/portainer
 if ! command -v curl &>/dev/null; then
   printf "\r\e[2K%b" '\033[93m Setup Source \033[m' >&2
   apt-get update >/dev/null 2>&1
   apt-get install -y curl >/dev/null 2>&1
 fi
-source <(curl -fsSL https://raw.githubusercontent.com/noahbleau/ProxmoxVE-non-root/root-check-bypass/misc/core.func)
-source <(curl -fsSL https://raw.githubusercontent.com/noahbleau/ProxmoxVE-non-root/root-check-bypass/misc/tools.func)
-source <(curl -fsSL https://raw.githubusercontent.com/noahbleau/ProxmoxVE-non-root/root-check-bypass/misc/error_handler.func)
-source <(curl -fsSL https://raw.githubusercontent.com/noahbleau/ProxmoxVE-non-root/root-check-bypass/misc/api.func) 2>/dev/null || true
+source <(curl -fsSL https://raw.githubusercontent.com/noahbleau/ProxmoxVE-non-root/main/misc/core.func)
+source <(curl -fsSL https://raw.githubusercontent.com/noahbleau/ProxmoxVE-non-root/main/misc/tools.func)
+source <(curl -fsSL https://raw.githubusercontent.com/noahbleau/ProxmoxVE-non-root/main/misc/error_handler.func)
+source <(curl -fsSL https://raw.githubusercontent.com/noahbleau/ProxmoxVE-non-root/main/misc/api.func) 2>/dev/null || true
 declare -f init_tool_telemetry &>/dev/null && init_tool_telemetry "portainer" "addon"
 
 # Enable error handling
@@ -120,7 +120,7 @@ function install() {
   cat <<'UPDATEEOF' >/usr/local/bin/update_portainer
 #!/usr/bin/env bash
 # Portainer Update Script
-type=update bash -c "$(curl -fsSL https://raw.githubusercontent.com/noahbleau/ProxmoxVE-non-root/root-check-bypass/tools/addon/portainer.sh)"
+type=update bash -c "$(curl -fsSL https://raw.githubusercontent.com/noahbleau/ProxmoxVE-non-root/main/tools/addon/portainer.sh)"
 UPDATEEOF
   chmod +x /usr/local/bin/update_portainer
   msg_ok "Created update script (/usr/local/bin/update_portainer)"

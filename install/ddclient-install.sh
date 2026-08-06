@@ -2,7 +2,7 @@
 
 # Copyright (c) 2021-2026 mitchscobell
 # Author: mitchscobell
-# License: MIT | https://github.com/noahbleau/ProxmoxVE-non-root/raw/root-check-bypass/LICENSE
+# License: MIT | https://github.com/noahbleau/ProxmoxVE-non-root/raw/main/LICENSE
 # Source: https://ddclient.net/
 
 source /dev/stdin <<<"$FUNCTIONS_FILE_PATH"

@@ -3,7 +3,7 @@
 # Copyright (c) 2021-2026 tteck
 # Author: tteck (tteckster)
 # Co-author: Rogue-King
-# License: MIT | https://github.com/noahbleau/ProxmoxVE-non-root/raw/root-check-bypass/LICENSE
+# License: MIT | https://github.com/noahbleau/ProxmoxVE-non-root/raw/main/LICENSE
 # Source: https://about.gitea.com/ | Github: https://github.com/go-gitea/gitea
 
 source /dev/stdin <<<"$FUNCTIONS_FILE_PATH"

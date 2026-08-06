@@ -2,7 +2,7 @@
 
 # Copyright (c) 2021-2026 tteck
 # Author: tteck (tteckster)
-# License: MIT | https://github.com/noahbleau/ProxmoxVE-non-root/raw/root-check-bypass/LICENSE
+# License: MIT | https://github.com/noahbleau/ProxmoxVE-non-root/raw/main/LICENSE
 # Source: https://www.commafeed.com/#/welcome | Github: https://github.com/Athou/commafeed
 
 source /dev/stdin <<<"$FUNCTIONS_FILE_PATH"

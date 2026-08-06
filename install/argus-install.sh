@@ -2,7 +2,7 @@
 
 # Copyright (c) 2021-2026 community-scripts ORG
 # Author: MickLesk (CanbiZ)
-# License: MIT | https://github.com/noahbleau/ProxmoxVE-non-root/raw/root-check-bypass/LICENSE
+# License: MIT | https://github.com/noahbleau/ProxmoxVE-non-root/raw/main/LICENSE
 # Source: https://release-argus.io/ | Github: https://github.com/release-argus/Argus
 
 source /dev/stdin <<<"$FUNCTIONS_FILE_PATH"
@@ -51,15 +51,15 @@ service:
       icon_link_to: https://release-argus.io
       web_url: https://github.com/release-argus/Argus/blob/master/CHANGELOG.md
 
-  community-scripts/ProxmoxVE:
+  noahbleau/ProxmoxVE-non-root:
     latest_version:
       type: github
-      url: community-scripts/ProxmoxVE
+      url: noahbleau/ProxmoxVE-non-root
       use_prerelease: false
     dashboard:
-      icon: https://raw.githubusercontent.com/community-scripts/ProxmoxVE/refs/heads/main/misc/images/logo.png
+      icon: https://raw.githubusercontent.com/noahbleau/ProxmoxVE-non-root/refs/heads/main/misc/images/logo.png
       icon_link_to: https://community-scripts.org/
-      web_url: https://github.com/community-scripts/ProxmoxVE/releases
+      web_url: https://github.com/noahbleau/ProxmoxVE-non-root/releases
 EOF
 msg_ok "Setup Config"
 

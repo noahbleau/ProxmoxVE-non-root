@@ -2,7 +2,7 @@
 # Copyright (c) 2021-2026 community-scripts ORG
 # Author: MickLesk
 # License: MIT
-# https://github.com/noahbleau/ProxmoxVE-non-root/raw/root-check-bypass/LICENSE
+# https://github.com/noahbleau/ProxmoxVE-non-root/raw/main/LICENSE
 
 function header_info {
   clear
@@ -23,7 +23,7 @@ RD="\033[01;31m"
 CL="\033[m"
 
 # Telemetry
-source <(curl -fsSL https://raw.githubusercontent.com/noahbleau/ProxmoxVE-non-root/root-check-bypass/misc/api.func) 2>/dev/null || true
+source <(curl -fsSL https://raw.githubusercontent.com/noahbleau/ProxmoxVE-non-root/main/misc/api.func) 2>/dev/null || true
 declare -f init_tool_telemetry &>/dev/null && init_tool_telemetry "kernel-clean" "pve"
 
 # Detect current kernel

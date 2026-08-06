@@ -2,7 +2,7 @@
 
 # Copyright (c) 2021-2026 community-scripts ORG
 # Author: zackwithak13
-# License: MIT | https://github.com/noahbleau/ProxmoxVE-non-root/raw/root-check-bypass/LICENSE
+# License: MIT | https://github.com/noahbleau/ProxmoxVE-non-root/raw/main/LICENSE
 # Source: https://www.uhfapp.com/server | Github: https://github.com/swapplications/uhf-server-dist
 
 source /dev/stdin <<<"$FUNCTIONS_FILE_PATH"

@@ -2,7 +2,7 @@
 
 # Copyright (c) 2021-2026 tteck
 # Author: tteck (tteckster) | Co-Author Slaviša Arežina (tremor021)
-# License: MIT | https://github.com/noahbleau/ProxmoxVE-non-root/raw/root-check-bypass/LICENSE
+# License: MIT | https://github.com/noahbleau/ProxmoxVE-non-root/raw/main/LICENSE
 # Source: https://magicmirror.builders/ | Github: https://github.com/MagicMirrorOrg/MagicMirror
 
 source /dev/stdin <<<"$FUNCTIONS_FILE_PATH"

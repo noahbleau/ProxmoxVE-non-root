@@ -2,7 +2,7 @@
 
 # Copyright (c) 2021-2026 tteck
 # Author: chrisbenincasa
-# License: MIT | https://github.com/noahbleau/ProxmoxVE-non-root/raw/root-check-bypass/LICENSE
+# License: MIT | https://github.com/noahbleau/ProxmoxVE-non-root/raw/main/LICENSE
 # Source: https://tunarr.com/ | Github: https://github.com/chrisbenincasa/tunarr
 
 source /dev/stdin <<<"$FUNCTIONS_FILE_PATH"
