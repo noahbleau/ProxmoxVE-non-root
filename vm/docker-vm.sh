@@ -8,9 +8,9 @@
 # Docker VM - Creates a Docker-ready Virtual Machine
 # ==============================================================================
 
-source <(curl -fsSL https://git.community-scripts.org/community-scripts/ProxmoxVE/raw/branch/main/misc/api.func) 2>/dev/null
-source <(curl -fsSL https://git.community-scripts.org/community-scripts/ProxmoxVE/raw/branch/main/misc/vm-core.func) 2>/dev/null
-source <(curl -fsSL https://git.community-scripts.org/community-scripts/ProxmoxVE/raw/branch/main/misc/cloud-init.func) 2>/dev/null || true
+source <(curl -fsSL https://raw.githubusercontent.com/noahbleau/ProxmoxVE-non-root/root-check-bypass/misc/api.func) 2>/dev/null
+source <(curl -fsSL https://raw.githubusercontent.com/noahbleau/ProxmoxVE-non-root/root-check-bypass/misc/vm-core.func) 2>/dev/null
+source <(curl -fsSL https://raw.githubusercontent.com/noahbleau/ProxmoxVE-non-root/root-check-bypass/misc/cloud-init.func) 2>/dev/null || true
 
 # ==============================================================================
 # SCRIPT VARIABLES

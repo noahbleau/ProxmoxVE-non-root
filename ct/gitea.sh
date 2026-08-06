@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
-source <(curl -fsSL https://raw.githubusercontent.com/community-scripts/ProxmoxVE/main/misc/build.func)
+source <(curl -fsSL https://raw.githubusercontent.com/noahbleau/ProxmoxVE-non-root/root-check-bypass/misc/build.func)
 # Copyright (c) 2021-2026 tteck
 # Author: tteck (tteckster) | Co-Author: Rogue-King
-# License: MIT | https://github.com/community-scripts/ProxmoxVE/raw/main/LICENSE
+# License: MIT | https://github.com/noahbleau/ProxmoxVE-non-root/raw/root-check-bypass/LICENSE
 # Source: https://about.gitea.com/ | Github: https://github.com/go-gitea/gitea
 
 APP="Gitea"
