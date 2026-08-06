@@ -6,7 +6,7 @@
   <p><strong>One-command installations for services, containers, and VMs on Proxmox VE</strong><br/>
   A community project — built on the foundation of <a href="https://github.com/tteck">@tteck</a>'s original work</p>
 
-  <table><tr><td><h4>View the original project here : <a href="https://github.com/community-scripts/ProxmoxVE">community-scripts/ProxmoxVE</a></h4></td></tr></table>
+  <table><tr><td style="padding: 0 25px"><h4>View the original project here : <a href="https://github.com/community-scripts/ProxmoxVE">community-scripts/ProxmoxVE</a></h4></td></tr></table>
 
   <!--<p>
     <a href="https://community-scripts.org"><img src="https://img.shields.io/badge/Website-community--scripts.org-4c9b3f?style=flat-square" /></a>
