@@ -291,11 +291,12 @@ shell_check() {
 # ------------------------------------------------------------------------------
 root_check() {
   if [[ "$(id -u)" -ne 0 || $(ps -o comm= -p $PPID) == "sudo" ]]; then
-    clear
-    msg_error "Please run this script as root."
-    echo -e "\nExiting..."
+    #clear
+    #msg_error "Please run this script as root."
+    msg_warn "Script running as non-root user. Issue may persist!"
+    #echo -e "\nExiting..."
     sleep 2
-    exit 104
+    #exit 104
   fi
 }
 
