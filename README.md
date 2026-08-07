@@ -45,9 +45,20 @@ The fastest way to find and run scripts:
 
 1. Go to **[community-scripts.org](https://community-scripts.org)**
 2. Search for the service you want (e.g. "Home Assistant", "Nginx Proxy Manager", "Jellyfin")
-3. Copy the one-line install command from the script page
+3. Copy the one-line install command from the script page.
+  > [!IMPORTANT]
+  > **To use the script as non-root, replace the repository from the one-line install command to this repository.**<br/>
+  > Replace the `community-scripts/ProxmoxVE` in the URL for `noahbleau/ProxmoxVE-non-root`.
+
+  ```diff
+  Here is an example, this URL:
+  - bash -c "$(curl -fsSL https://raw.githubusercontent.com/community-scripts/ProxmoxVE/main/vm/debian-vm.sh)"
+  would now be
+  + bash -c "$(curl -fsSL https://raw.githubusercontent.com/noahbleau/ProxmoxVE-non-root/main/vm/debian-vm.sh)"
+  ```
 4. Open your **Proxmox Shell** and paste it
 5. Choose between **Default** or **Advanced** setup and follow the prompts
+
 
 Each script page documents what the container includes, default resource allocation, and post-install notes.
 
