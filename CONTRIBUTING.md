@@ -87,7 +87,7 @@ Changes to scripts that already exist in ProxmoxVE go directly here:
 
 3. Make your changes to the relevant files in `ct/` and/or `install/`
 
-4. Open a PR from your fork to `noahbleau/ProxmoxVE-non-root/main`
+4. Open a PR from your fork to `noahbleau/ProxmoxVE-non-root/dev_mode`
 
 Your PR should only contain the files you changed. Do not include unrelated modifications.
 
@@ -113,7 +113,7 @@ Full standards and examples: **[community-scripts.org/docs/contribution](https:/
 Set the `dev_mode` variable to enable debugging features when testing. Flags can be combined (comma-separated):
 
 ```bash
-dev_mode="trace,keep" bash -c "$(curl -fsSL https://raw.githubusercontent.com/noahbleau/ProxmoxVE-non-root/main/ct/myapp.sh)"
+dev_mode="trace,keep" bash -c "$(curl -fsSL https://raw.githubusercontent.com/noahbleau/ProxmoxVE-non-root/dev_mode/ct/myapp.sh)"
 ```
 
 | Flag         | Description                                                  |

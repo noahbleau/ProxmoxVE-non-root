@@ -1,6 +1,6 @@
 ﻿<div align="center">
   <a href="#">
-    <img src="https://raw.githubusercontent.com/noahbleau/ProxmoxVE-non-root/main/misc/images/logo.png" height="100px" />
+    <img src="https://raw.githubusercontent.com/noahbleau/ProxmoxVE-non-root/dev_mode/misc/images/logo.png" height="100px" />
  </a>
 </div>
 <h1 align="center">Changelog</h1>

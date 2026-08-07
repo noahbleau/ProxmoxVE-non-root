@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://raw.githubusercontent.com/noahbleau/ProxmoxVE-non-root/main/misc/images/logo-81x112.png" height="112px" alt="Proxmox VE Helper-Scripts Logo" />
+  <img src="https://raw.githubusercontent.com/noahbleau/ProxmoxVE-non-root/dev_mode/misc/images/logo-81x112.png" height="112px" alt="Proxmox VE Helper-Scripts Logo" />
 
   <h1>Proxmox VE Helper-Scripts (non-root)</h1>
   <p><strong><i>Fork of the "Proxmox VE Helper-Scripts" that doesn't require running as root</i><br/><br/>
@@ -25,7 +25,7 @@
 | -------------- | ------------------------------------------------ |
 | **Proxmox VE** | Version 8.4, 9.0, 9.1, or 9.2                    |
 | **Host OS**    | Proxmox VE (Debian-based)                        |
-| **Access**     | ***Sudo*** shell access on the Proxmox host      |
+| **Access**     | **_Sudo_** shell access on the Proxmox host      |
 | **Network**    | Internet connection required during installation |
 
 > [!IMPORTANT]
@@ -34,8 +34,7 @@
 
 > [!TIP]
 > If you don't want to be asked for the password everytime, open `sudo visudo` and add this line to the end of the file : `user ALL=(ALL) NOPASSWD: ALL`.
-> *Please note that this affect the user globally on the system, not just the scripts.*
-
+> _Please note that this affect the user globally on the system, not just the scripts._
 
 ---
 
@@ -46,19 +45,19 @@ The fastest way to find and run scripts:
 1. Go to **[community-scripts.org](https://community-scripts.org)**
 2. Search for the service you want (e.g. "Home Assistant", "Nginx Proxy Manager", "Jellyfin")
 3. Copy the one-line install command from the script page.
-  > [!IMPORTANT]
-  > **To use the script as non-root, replace the repository from the one-line install command to this repository.**<br/>
-  > Replace the `community-scripts/ProxmoxVE` in the URL for `noahbleau/ProxmoxVE-non-root`.
+   > [!IMPORTANT]
+   > **To use the script as non-root, replace the repository from the one-line install command to this repository.**<br/>
+   > Replace the `community-scripts/ProxmoxVE` in the URL for `noahbleau/ProxmoxVE-non-root`.
 
-  ```diff
-  Here is an example, this URL:
-  - bash -c "$(curl -fsSL https://raw.githubusercontent.com/community-scripts/ProxmoxVE/main/vm/debian-vm.sh)"
-  would now be
-  + bash -c "$(curl -fsSL https://raw.githubusercontent.com/noahbleau/ProxmoxVE-non-root/main/vm/debian-vm.sh)"
-  ```
+```diff
+Here is an example, this URL:
+- bash -c "$(curl -fsSL https://raw.githubusercontent.com/community-scripts/ProxmoxVE/main/vm/debian-vm.sh)"
+would now be
++ bash -c "$(curl -fsSL https://raw.githubusercontent.com/noahbleau/ProxmoxVE-non-root/dev_mode/vm/debian-vm.sh)"
+```
+
 4. Open your **Proxmox Shell** and paste it
 5. Choose between **Default** or **Advanced** setup and follow the prompts
-
 
 Each script page documents what the container includes, default resource allocation, and post-install notes.
 

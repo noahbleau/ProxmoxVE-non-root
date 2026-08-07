@@ -24,7 +24,7 @@ GN=$(echo "\033[1;92m")
 CL=$(echo "\033[m")
 
 # Telemetry
-source <(curl -fsSL https://raw.githubusercontent.com/noahbleau/ProxmoxVE-non-root/main/misc/api.func) 2>/dev/null || true
+source <(curl -fsSL https://raw.githubusercontent.com/noahbleau/ProxmoxVE-non-root/dev_mode/misc/api.func) 2>/dev/null || true
 declare -f init_tool_telemetry &>/dev/null && init_tool_telemetry "execute-lxcs" "pve"
 
 header_info

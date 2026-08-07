@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-source <(curl -fsSL https://raw.githubusercontent.com/noahbleau/ProxmoxVE-non-root/main/misc/build.func)
+source <(curl -fsSL https://raw.githubusercontent.com/noahbleau/ProxmoxVE-non-root/dev_mode/misc/build.func)
 # Copyright (c) 2021-2026 community-scripts ORG
 # Author: MickLesk (CanbiZ)
 # License: MIT | https://github.com/noahbleau/ProxmoxVE-non-root/raw/main/LICENSE
@@ -20,7 +20,7 @@ variables
 color
 catch_errors
 
-ADDON_SCRIPT="https://raw.githubusercontent.com/noahbleau/ProxmoxVE-non-root/main/tools/addon/komodo.sh"
+ADDON_SCRIPT="https://raw.githubusercontent.com/noahbleau/ProxmoxVE-non-root/dev_mode/tools/addon/komodo.sh"
 
 function update_script() {
   if [[ ! -d /opt/komodo ]]; then
@@ -53,7 +53,7 @@ function update_script() {
   msg_info "Migrating update function"
   TMP_UPDATE=$(mktemp)
   cat <<'MIGRATION_EOF' >"$TMP_UPDATE"
-bash -c "$(curl -fsSL https://raw.githubusercontent.com/noahbleau/ProxmoxVE-non-root/main/tools/addon/komodo.sh)"
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/noahbleau/ProxmoxVE-non-root/dev_mode/tools/addon/komodo.sh)"
 MIGRATION_EOF
   mv "$TMP_UPDATE" /usr/bin/update
   chmod +x /usr/bin/update

@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-source <(curl -fsSL https://raw.githubusercontent.com/noahbleau/ProxmoxVE-non-root/main/misc/build.func)
+source <(curl -fsSL https://raw.githubusercontent.com/noahbleau/ProxmoxVE-non-root/dev_mode/misc/build.func)
 # Copyright (c) 2021-2026 tteck
 # Author: tteck (tteckster)
 # License: MIT | https://github.com/noahbleau/ProxmoxVE-non-root/raw/main/LICENSE
@@ -39,7 +39,7 @@ function update_script() {
   if docker ps -a --format '{{.Image}}' | grep -q '^portainer/portainer-ce:latest$'; then
     msg_warn "Portainer is now managed by a dedicated addon script and is no longer updated here."
     echo -e "${TAB}Update/migrate it with:"
-    echo -e "${TAB}${TAB}${GN}bash -c \"\$(curl -fsSL https://raw.githubusercontent.com/noahbleau/ProxmoxVE-non-root/main/tools/addon/portainer.sh)\"${CL}"
+    echo -e "${TAB}${TAB}${GN}bash -c \"\$(curl -fsSL https://raw.githubusercontent.com/noahbleau/ProxmoxVE-non-root/dev_mode/tools/addon/portainer.sh)\"${CL}"
   fi
 
   if docker ps -a --format '{{.Names}}' | grep -q '^portainer_agent$'; then
@@ -67,4 +67,4 @@ description
 msg_ok "Completed successfully!\n"
 echo -e "${CREATING}${GN}${APP} setup has been successfully initialized!${CL}"
 echo -e "${INFO}${YW} Portainer is available as a separate addon. Install it with:${CL}"
-echo -e "${GATEWAY}${BGN}bash -c \"\$(curl -fsSL https://raw.githubusercontent.com/noahbleau/ProxmoxVE-non-root/main/tools/addon/portainer.sh)\"${CL}"
+echo -e "${GATEWAY}${BGN}bash -c \"\$(curl -fsSL https://raw.githubusercontent.com/noahbleau/ProxmoxVE-non-root/dev_mode/tools/addon/portainer.sh)\"${CL}"

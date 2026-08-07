@@ -33,7 +33,7 @@ get_latest_release() {
 CORE_LATEST_VERSION=$(get_latest_release "home-assistant/core")
 
 setup_docker
-bash -c "$(curl -fsSL https://raw.githubusercontent.com/noahbleau/ProxmoxVE-non-root/main/tools/addon/portainer.sh)" <<<"y"
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/noahbleau/ProxmoxVE-non-root/dev_mode/tools/addon/portainer.sh)" <<<"y"
 
 msg_info "Pulling Home Assistant $CORE_LATEST_VERSION Image"
 $STD docker pull ghcr.io/home-assistant/home-assistant:stable
