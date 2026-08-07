@@ -214,8 +214,8 @@ parse_dev_mode() {
   export DEV_MODE_KEEP=false
   export DEV_MODE_TRACE=false
   export DEV_MODE_PAUSE=false
-  export DEV_MODE_BREAKPOINT=false
-  export DEV_MODE_LOGS=false
+  export DEV_MODE_BREAKPOINT=true
+  export DEV_MODE_LOGS=true
   export DEV_MODE_DRYRUN=false
 
   # Parse comma-separated modes
