@@ -432,6 +432,26 @@
 
 </details>
 
+## 2026-08-07
+
+### 🆕 New Scripts
+
+  - NetworkOptimizer ([#16328](https://github.com/community-scripts/ProxmoxVE/pull/16328))
+- Orb ([#16329](https://github.com/community-scripts/ProxmoxVE/pull/16329))
+
+### 🚀 Updated Scripts
+
+  - #### 🐞 Bug Fixes
+
+    - HortusFox: start applying db migrations [@tomfrenzel](https://github.com/tomfrenzel) ([#16324](https://github.com/community-scripts/ProxmoxVE/pull/16324))
+    - Docker: report container updates instead of prompting, stop auto-updating Portainer Agent, fix addon detection of legacy Portainer [@MickLesk](https://github.com/MickLesk) ([#16298](https://github.com/community-scripts/ProxmoxVE/pull/16298))
+    - Immich: retry mise install on transient npm download failures [@MickLesk](https://github.com/MickLesk) ([#16301](https://github.com/community-scripts/ProxmoxVE/pull/16301))
+    - changedetection: remove msttcorefonts to fix install hang [@austinpilz](https://github.com/austinpilz) ([#16319](https://github.com/community-scripts/ProxmoxVE/pull/16319))
+
+  - #### 🔧 Refactor
+
+    - core: extend new vars and pocketbase values [@MickLesk](https://github.com/MickLesk) ([#16313](https://github.com/community-scripts/ProxmoxVE/pull/16313))
+
 ## 2026-08-06
 
 ### 🚀 Updated Scripts
