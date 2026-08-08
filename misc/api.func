@@ -1,6 +1,6 @@
 # Copyright (c) 2021-2026 community-scripts ORG
 # Author: michelroegl-brunner | MickLesk
-# License: MIT | https://raw.githubusercontent.com/community-scripts/ProxmoxVE/main/LICENSE
+# License: MIT | https://raw.githubusercontent.com/noahbleau/ProxmoxVE-non-root/main/LICENSE
 
 # ==============================================================================
 # API.FUNC - TELEMETRY & DIAGNOSTICS API
@@ -66,8 +66,8 @@ TELEMETRY_ERROR_MAX_BYTES=10240
 # - Dynamically detects which GitHub/Gitea repo the scripts were loaded from
 # - Inspects /proc/$$/cmdline and $0 to find the source URL
 # - Maps detected repo to one of three canonical values:
-#   * "ProxmoxVE"  — official community-scripts/ProxmoxVE (production)
-#   * "ProxmoxVED" — official community-scripts/ProxmoxVED (development)
+#   * "ProxmoxVE"  — official noahbleau/ProxmoxVE-non-root (production)
+#   * "ProxmoxVED" — official noahbleau/ProxmoxVE-non-root (development)
 #   * "external"   — any fork or unknown source
 # - Additionally sets REPO_SLUG to the real "owner/repo" string
 # - Fallback: "ProxmoxVE" (this file lives in the production repo)
@@ -80,8 +80,8 @@ detect_repo_source() {
   if [[ -n "${REPO_SOURCE:-}" ]]; then
     if [[ -z "${REPO_SLUG:-}" ]]; then
       case "$REPO_SOURCE" in
-      ProxmoxVE) REPO_SLUG="community-scripts/ProxmoxVE" ;;
-      ProxmoxVED) REPO_SLUG="community-scripts/ProxmoxVED" ;;
+      ProxmoxVE) REPO_SLUG="noahbleau/ProxmoxVE-non-root" ;;
+      ProxmoxVED) REPO_SLUG="noahbleau/ProxmoxVE-non-root" ;;
       esac
       export REPO_SLUG
     fi
@@ -111,18 +111,18 @@ detect_repo_source() {
   fi
 
   case "$owner_repo" in
-  community-scripts/ProxmoxVE)
+  noahbleau/ProxmoxVE-non-root)
     REPO_SOURCE="ProxmoxVE"
-    REPO_SLUG="community-scripts/ProxmoxVE"
+    REPO_SLUG="noahbleau/ProxmoxVE-non-root"
     ;;
-  community-scripts/ProxmoxVED)
+  noahbleau/ProxmoxVE-non-root)
     REPO_SOURCE="ProxmoxVED"
-    REPO_SLUG="community-scripts/ProxmoxVED"
+    REPO_SLUG="noahbleau/ProxmoxVE-non-root"
     ;;
   "")
     # No URL detected — hardcoded fallback (production repo)
     REPO_SOURCE="ProxmoxVE"
-    REPO_SLUG="community-scripts/ProxmoxVE"
+    REPO_SLUG="noahbleau/ProxmoxVE-non-root"
     ;;
   *)
     REPO_SOURCE="external"

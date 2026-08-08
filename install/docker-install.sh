@@ -2,7 +2,7 @@
 
 # Copyright (c) 2021-2026 tteck
 # Author: tteck (tteckster)
-# License: MIT | https://github.com/community-scripts/ProxmoxVE/raw/main/LICENSE
+# License: MIT | https://github.com/noahbleau/ProxmoxVE-non-root/raw/main/LICENSE
 # Source: https://www.docker.com/
 
 source /dev/stdin <<<"$FUNCTIONS_FILE_PATH"
@@ -18,7 +18,7 @@ PORTAINER_AGENT_LATEST_VERSION=$(get_latest_github_release "portainer/agent")
 setup_docker
 
 if prompt_confirm "${TAB3}Would you like to install Portainer (UI) via the community-scripts addon?" "n" 60; then
-  bash -c "$(curl -fsSL https://raw.githubusercontent.com/community-scripts/ProxmoxVE/main/tools/addon/portainer.sh)" <<<"y"
+  bash -c "$(curl -fsSL https://raw.githubusercontent.com/noahbleau/ProxmoxVE-non-root/main/tools/addon/portainer.sh)" <<<"y"
 else
   read -r -p "${TAB3}Would you like to install the Portainer Agent (for remote management)? <y/N> " prompt_agent
   if [[ ${prompt_agent,,} =~ ^(y|yes)$ ]]; then

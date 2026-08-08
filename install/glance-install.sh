@@ -2,7 +2,7 @@
 
 # Copyright (c) 2021-2026 community-scripts ORG
 # Author: kristocopani
-# License: MIT | https://github.com/community-scripts/ProxmoxVE/raw/main/LICENSE
+# License: MIT | https://github.com/noahbleau/ProxmoxVE-non-root/raw/main/LICENSE
 # Source: https://github.com/glanceapp/glance
 
 source /dev/stdin <<<"$FUNCTIONS_FILE_PATH"
@@ -35,7 +35,7 @@ pages:
                   - title: Google
                     url: https://www.google.com/
                   - title: Helper Scripts
-                    url: https://github.com/community-scripts/ProxmoxVE
+                    url: https://github.com/noahbleau/ProxmoxVE-non-root
 EOF
 msg_ok "Configured Glance"
 

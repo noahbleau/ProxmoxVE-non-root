@@ -2,10 +2,10 @@
 
 # Copyright (c) 2021-2026 community-scripts ORG
 # Author: BvdBerg01 | Co-Author: remz1337
-# License: MIT | https://github.com/community-scripts/ProxmoxVE/raw/main/LICENSE
+# License: MIT | https://github.com/noahbleau/ProxmoxVE-non-root/raw/main/LICENSE
 
-source <(curl -fsSL https://raw.githubusercontent.com/community-scripts/ProxmoxVE/refs/heads/main/misc/core.func)
-source <(curl -fsSL https://raw.githubusercontent.com/community-scripts/ProxmoxVE/main/misc/api.func) 2>/dev/null || true
+source <(curl -fsSL https://raw.githubusercontent.com/noahbleau/ProxmoxVE-non-root/refs/heads/main/misc/core.func)
+source <(curl -fsSL https://raw.githubusercontent.com/noahbleau/ProxmoxVE-non-root/main/misc/api.func) 2>/dev/null || true
 declare -f init_tool_telemetry &>/dev/null && init_tool_telemetry "update-apps" "pve"
 
 # =============================================================================
@@ -158,7 +158,7 @@ function validate_service_script() {
   local name="$1"
   sanitize_service_name "$name" || return 1
   curl -fsSL --max-time 10 -o /dev/null \
-    "https://raw.githubusercontent.com/community-scripts/ProxmoxVE/main/ct/${name}.sh" 2>/dev/null
+    "https://raw.githubusercontent.com/noahbleau/ProxmoxVE-non-root/main/ct/${name}.sh" 2>/dev/null
 }
 
 function detect_service() {
@@ -490,7 +490,7 @@ for container in $CHOICE; do
   log_write "Container $container: detected service '${service}'"
 
   #2) Extract service build/update resource requirements from config/installation file
-  script=$(curl -fsSL "https://raw.githubusercontent.com/community-scripts/ProxmoxVE/main/ct/${service}.sh")
+  script=$(curl -fsSL "https://raw.githubusercontent.com/noahbleau/ProxmoxVE-non-root/main/ct/${service}.sh")
 
   #2.1) Check if the script downloaded successfully
   if [ $? -ne 0 ] || [ -z "${script}" ]; then

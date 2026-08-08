@@ -2,7 +2,7 @@
 
 # Copyright (c) 2021-2026 tteck
 # Author: tteck (tteckster)
-# License: MIT | https://github.com/community-scripts/ProxmoxVE/raw/main/LICENSE
+# License: MIT | https://github.com/noahbleau/ProxmoxVE-non-root/raw/main/LICENSE
 # Source: https://www.home-assistant.io/
 
 source /dev/stdin <<<"$FUNCTIONS_FILE_PATH"
@@ -33,7 +33,7 @@ get_latest_release() {
 CORE_LATEST_VERSION=$(get_latest_release "home-assistant/core")
 
 setup_docker
-bash -c "$(curl -fsSL https://raw.githubusercontent.com/community-scripts/ProxmoxVE/main/tools/addon/portainer.sh)" <<<"y"
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/noahbleau/ProxmoxVE-non-root/main/tools/addon/portainer.sh)" <<<"y"
 
 msg_info "Pulling Home Assistant $CORE_LATEST_VERSION Image"
 $STD docker pull ghcr.io/home-assistant/home-assistant:stable
