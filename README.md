@@ -19,6 +19,12 @@
 
 ---
 
+<div align="center">
+  <table><tr><td><h2><strong>⚠️ This project is still in developpement (<a href="https://github.com/noahbleau/ProxmoxVE-non-root/issues/3">#3</a>) ⚠️</strong></h2></td></tr></table>
+</div>
+
+---
+
 ## Requirements
 
 | Component      | Details                                          |
