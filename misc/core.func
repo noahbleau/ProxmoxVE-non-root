@@ -289,7 +289,7 @@ shell_check() {
 # - Exits with error if not running as root directly or user is not in sudo group
 # ------------------------------------------------------------------------------
 root_check() {
-  if [[ "$(id -u)" -ne 0 || "$(id -nG)" != *"sudo"* ]]; then
+  if [[ "$(id -u)" -ne 0 && "$(id -nG)" != *"sudo"* ]]; then
     clear
     msg_error "The script was executed without root privileges or the current user is not in the sudo group."
     echo -e "\nExiting..."
