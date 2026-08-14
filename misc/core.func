@@ -287,14 +287,25 @@ shell_check() {
 #
 # - Verifies script is running with root privileges or user is in sudo group
 # - Exits with error if not running as root directly or user is not in sudo group
+# - Check if the commands needs to add sudo or not
 # ------------------------------------------------------------------------------
 root_check() {
+  # Check if running as root or user is in sudo group
   if [[ "$(id -u)" -ne 0 && "$(id -nG)" != *"sudo"* ]]; then
     clear
     msg_error "The script was executed without root privileges or the current user is not in the sudo group."
     echo -e "\nExiting..."
     sleep 2
     exit 104
+  fi
+
+  # Store sudo prefix for later use if not running as root
+  if [[ "$(id -u)" -ne 0 ]]; then
+    export USE_SUDO="sudo"
+    export IS_SUDO_USER="true"
+  else
+    export USE_SUDO=""
+    export IS_SUDO_USER="false"
   fi
 }
 
