@@ -5,6 +5,7 @@
 <<<<<<< Updated upstream
 # License: MIT | https://github.com/community-scripts/ProxmoxVE/raw/main/LICENSE
 # Source: https://rxresu.me/ | Github: https://github.com/amruthpillai/reactive-resume
+<<<<<<< HEAD
 =======
 # License: MIT | https://github.com/noahbleau/ProxmoxVE-non-root/raw/main/LICENSE
 <<<<<<< Updated upstream
@@ -13,6 +14,8 @@
 # Source: https://rxresu.me/ | Github: https://github.com/amruthpillai/reactive-resume
 >>>>>>> Stashed changes
 >>>>>>> Stashed changes
+=======
+>>>>>>> upstream/main
 
 source /dev/stdin <<<"$FUNCTIONS_FILE_PATH"
 color

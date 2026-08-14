@@ -2,11 +2,15 @@
 
 # Copyright (c) 2021-2025 community-scripts ORG
 # Author: KernelSailor
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 # License: MIT | https://github.com/community-scripts/ProxmoxVE/raw/main/LICENSE
 =======
 # License: MIT | https://github.com/noahbleau/ProxmoxVE-non-root/raw/main/LICENSE
 >>>>>>> Stashed changes
+=======
+# License: MIT | https://github.com/community-scripts/ProxmoxVE/raw/main/LICENSE
+>>>>>>> upstream/main
 # Source: https://snowflake.torproject.org/
 
 source /dev/stdin <<<"$FUNCTIONS_FILE_PATH"
