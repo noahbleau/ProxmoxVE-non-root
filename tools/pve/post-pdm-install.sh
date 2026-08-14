@@ -2,7 +2,11 @@
 
 # Copyright (c) 2021-2026 community-scripts ORG
 # Author: MickLesk (CanbiZ)
+<<<<<<< Updated upstream
 # License: MIT | https://github.com/community-scripts/ProxmoxVE/raw/main/LICENSE
+=======
+# License: MIT | https://github.com/noahbleau/ProxmoxVE-non-root/raw/main/LICENSE
+>>>>>>> Stashed changes
 
 header_info() {
   clear
@@ -44,7 +48,11 @@ msg_error() {
 }
 
 # Telemetry
+<<<<<<< Updated upstream
 source <(curl -fsSL https://raw.githubusercontent.com/community-scripts/ProxmoxVE/main/misc/api.func) 2>/dev/null || true
+=======
+source <(curl -fsSL https://raw.githubusercontent.com/noahbleau/ProxmoxVE-non-root/main/misc/api.func) 2>/dev/null || true
+>>>>>>> Stashed changes
 declare -f init_tool_telemetry &>/dev/null && init_tool_telemetry "post-pdm-install" "pve"
 
 if ! dpkg -s proxmox-datacenter-manager >/dev/null 2>&1; then

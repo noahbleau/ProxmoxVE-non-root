@@ -2,8 +2,17 @@
 
 # Copyright (c) 2021-2026 community-scripts ORG
 # Author: vhsdream | Rewrite: MickLesk (CanbiZ)
+<<<<<<< Updated upstream
 # License: MIT | https://github.com/community-scripts/ProxmoxVE/raw/main/LICENSE
 # Source: https://rxresu.me/ | Github: https://github.com/amruthpillai/reactive-resume
+=======
+# License: MIT | https://github.com/noahbleau/ProxmoxVE-non-root/raw/main/LICENSE
+<<<<<<< Updated upstream
+# Source: https://rxresume.org | Github: https://github.com/amruthpillai/reactive-resume
+=======
+# Source: https://rxresu.me/ | Github: https://github.com/amruthpillai/reactive-resume
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
 
 source /dev/stdin <<<"$FUNCTIONS_FILE_PATH"
 color

@@ -2,8 +2,17 @@
 source <(curl -fsSL https://raw.githubusercontent.com/community-scripts/ProxmoxVE/main/misc/build.func)
 # Copyright (c) 2021-2026 community-scripts ORG
 # Author: vhsdream | MickLesk (CanbiZ)
+<<<<<<< Updated upstream
 # License: MIT | https://github.com/community-scripts/ProxmoxVE/raw/main/LICENSE
 # Source: https://rxresu.me/ | Github: https://github.com/amruthpillai/reactive-resume
+=======
+# License: MIT | https://github.com/noahbleau/ProxmoxVE-non-root/raw/main/LICENSE
+<<<<<<< Updated upstream
+# Source: https://rxresume.org | Github: https://github.com/amruthpillai/reactive-resume
+=======
+# Source: https://rxresu.me/ | Github: https://github.com/amruthpillai/reactive-resume
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
 
 APP="Reactive-Resume"
 var_tags="${var_tags:-documents}"
