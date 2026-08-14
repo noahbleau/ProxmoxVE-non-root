@@ -62,7 +62,7 @@ variables() {
 
   # Setup persistent log directory if logs mode active
   if [[ "${DEV_MODE_LOGS:-false}" == "true" ]]; then
-    mkdir -p /var/log/community-scripts
+    $USE_SUDO mkdir -p /var/log/community-scripts
     BUILD_LOG="/var/log/community-scripts/create-lxc-${SESSION_ID}-$(date +%Y%m%d_%H%M%S).log"
   fi
 
