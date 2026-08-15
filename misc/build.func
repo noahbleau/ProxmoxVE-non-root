@@ -286,16 +286,16 @@ install_ssh_keys_into_ct() {
 
   if [[ -n "$SSH_KEYS_FILE" && -s "$SSH_KEYS_FILE" ]]; then
     msg_info "Installing selected SSH keys into CT ${CTID}"
-    pct exec "$CTID" -- sh -c 'mkdir -p /root/.ssh && chmod 700 /root/.ssh' || {
+    $USE_SUDO pct exec "$CTID" -- sh -c 'mkdir -p /root/.ssh && chmod 700 /root/.ssh' || {
       msg_error "prepare /root/.ssh failed"
       return 252
     }
-    pct push "$CTID" "$SSH_KEYS_FILE" /root/.ssh/authorized_keys >/dev/null 2>&1 ||
-      pct exec "$CTID" -- sh -c "cat > /root/.ssh/authorized_keys" <"$SSH_KEYS_FILE" || {
+    $USE_SUDO pct push "$CTID" "$SSH_KEYS_FILE" /root/.ssh/authorized_keys >/dev/null 2>&1 ||
+      $USE_SUDO pct exec "$CTID" -- sh -c "cat > /root/.ssh/authorized_keys" <"$SSH_KEYS_FILE" || {
       msg_error "write authorized_keys failed"
       return 252
     }
-    pct exec "$CTID" -- sh -c 'chmod 600 /root/.ssh/authorized_keys' || true
+    $USE_SUDO pct exec "$CTID" -- sh -c 'chmod 600 /root/.ssh/authorized_keys' || true
     msg_ok "Installed SSH keys into CT ${CTID}"
     return 0
   fi
