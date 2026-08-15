@@ -435,6 +435,35 @@
 
 </details>
 
+## 2026-08-14
+
+### 🆕 New Scripts
+
+  - RSS-Bridge ([#16471](https://github.com/community-scripts/ProxmoxVE/pull/16471))
+- GoDoxy ([#16470](https://github.com/community-scripts/ProxmoxVE/pull/16470))
+- Mumble ([#16474](https://github.com/community-scripts/ProxmoxVE/pull/16474))
+- Fleet ([#16472](https://github.com/community-scripts/ProxmoxVE/pull/16472))
+- Newt ([#16473](https://github.com/community-scripts/ProxmoxVE/pull/16473))
+
+### 🚀 Updated Scripts
+
+  - #### 🐞 Bug Fixes
+
+    - calibre-web: install as package for 0.6.27's src-layout restructure [@MickLesk](https://github.com/MickLesk) ([#16480](https://github.com/community-scripts/ProxmoxVE/pull/16480))
+    - Wanderer: Refactor of Services / Installation / Paths [@johanngrobe](https://github.com/johanngrobe) ([#16487](https://github.com/community-scripts/ProxmoxVE/pull/16487))
+    - pelican-panel: set APP_URL to container IP [@MickLesk](https://github.com/MickLesk) ([#16488](https://github.com/community-scripts/ProxmoxVE/pull/16488))
+    - fix(ampache): update to PHP 8.5 asset, auto-upgrade PHP on update [@CervezaStallone](https://github.com/CervezaStallone) ([#16484](https://github.com/community-scripts/ProxmoxVE/pull/16484))
+
+  - #### ✨ New Features
+
+    - projectsend: rewrite for 2.0.0 (Laravel, nginx, MariaDB) [@MickLesk](https://github.com/MickLesk) ([#16477](https://github.com/community-scripts/ProxmoxVE/pull/16477))
+    - Homepage v2.0 [@vhsdream](https://github.com/vhsdream) ([#16500](https://github.com/community-scripts/ProxmoxVE/pull/16500))
+
+  - #### 🔧 Refactor
+
+    - Refactor: PowerDNS move poweradmin database outside the web root [@MickLesk](https://github.com/MickLesk) ([#16476](https://github.com/community-scripts/ProxmoxVE/pull/16476))
+    - paperless-ngx: run services with uv --no-sync to avoid startup network dependency [@MickLesk](https://github.com/MickLesk) ([#16479](https://github.com/community-scripts/ProxmoxVE/pull/16479))
+
 ## 2026-08-13
 
 ### 🆕 New Scripts
