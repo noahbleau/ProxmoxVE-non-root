@@ -3,7 +3,7 @@
 # Copyright (c) 2021-2026 community-scripts ORG
 # Author: vhsdream | Rewrite: MickLesk (CanbiZ)
 <<<<<<< Updated upstream
-# License: MIT | https://github.com/community-scripts/ProxmoxVE/raw/main/LICENSE
+# License: MIT | https://github.com/noahbleau/ProxmoxVE-non-root/raw/main/LICENSE
 # Source: https://rxresu.me/ | Github: https://github.com/amruthpillai/reactive-resume
 <<<<<<< HEAD
 =======

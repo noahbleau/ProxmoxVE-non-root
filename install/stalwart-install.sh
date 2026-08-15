@@ -4,12 +4,12 @@
 # Author: MickLesk (CanbiZ)
 <<<<<<< HEAD
 <<<<<<< Updated upstream
-# License: MIT | https://github.com/community-scripts/ProxmoxVE/raw/main/LICENSE
+# License: MIT | https://github.com/noahbleau/ProxmoxVE-non-root/raw/main/LICENSE
 =======
 # License: MIT | https://github.com/noahbleau/ProxmoxVE-non-root/raw/main/LICENSE
 >>>>>>> Stashed changes
 =======
-# License: MIT | https://github.com/community-scripts/ProxmoxVE/raw/main/LICENSE
+# License: MIT | https://github.com/noahbleau/ProxmoxVE-non-root/raw/main/LICENSE
 >>>>>>> upstream/main
 # Source: https://github.com/stalwartlabs/stalwart
 

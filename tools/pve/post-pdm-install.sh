@@ -46,12 +46,12 @@ msg_error() {
 # Telemetry
 <<<<<<< HEAD
 <<<<<<< Updated upstream
-source <(curl -fsSL https://raw.githubusercontent.com/community-scripts/ProxmoxVE/main/misc/api.func) 2>/dev/null || true
+source <(curl -fsSL https://raw.githubusercontent.com/noahbleau/ProxmoxVE-non-root/main/misc/api.func) 2>/dev/null || true
 =======
 source <(curl -fsSL https://raw.githubusercontent.com/noahbleau/ProxmoxVE-non-root/main/misc/api.func) 2>/dev/null || true
 >>>>>>> Stashed changes
 =======
-source <(curl -fsSL https://raw.githubusercontent.com/community-scripts/ProxmoxVE/main/misc/api.func) 2>/dev/null || true
+source <(curl -fsSL https://raw.githubusercontent.com/noahbleau/ProxmoxVE-non-root/main/misc/api.func) 2>/dev/null || true
 >>>>>>> upstream/main
 declare -f init_tool_telemetry &>/dev/null && init_tool_telemetry "post-pdm-install" "pve"
 
