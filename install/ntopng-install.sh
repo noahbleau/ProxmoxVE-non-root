@@ -2,7 +2,7 @@
 
 # Copyright (c) 2021-2026 community-scripts ORG
 # Author: MickLesk (CanbiZ)
-# License: MIT | https://github.com/community-scripts/ProxmoxVE/raw/main/LICENSE
+# License: MIT | https://github.com/noahbleau/PromoxVE-non-root/raw/main/LICENSE
 # Source: https://www.ntop.org/products/traffic-analysis/ntop/
 
 source /dev/stdin <<<"$FUNCTIONS_FILE_PATH"
